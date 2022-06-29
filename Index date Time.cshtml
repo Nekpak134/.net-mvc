@@ -1,0 +1,47 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        nekpal
+    </div>
+    <div>
+        @DateTime.Now
+    </div>
+
+    <div>
+        @(5-3)
+    </div>
+
+    @{ 
+        var a = 4;
+        var b = 5;
+        var c = a + b;
+        var currentTime = DateTime.Now;
+        var tomorrowTime = DateTime.Now.AddDays(1);
+        var colorList = new List<string>() { "Rihan", "nekpal", "sachin" };
+    }
+    <div>
+        <label>@c</label>
+
+        <label>currentTime-@currentTime</label><br/>
+
+        <label>tomorrowTime-@tomorrowTime</label>
+
+
+        <label>@colorList.FirstOrDefault() </label>
+    </div>
+
+    <div>nekpal.ww@gamil.com </div>
+
+    <div>
+        <label>my accunt no-@@nekpal</label>
+    </div>
+</body>
+</html>
