@@ -1,0 +1,48 @@
+﻿
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @{ 
+        bool isTrue = true;
+
+    }
+    <div> 
+
+        @if(isTrue)
+            {
+                <h1>Hello,i am from if block</h1>
+            }
+    </div>
+</body>
+          <hr />
+         <body>
+             @{ 
+                 int myvar = 2;
+             }
+             <div>
+                 @if (myvar == 2)
+                 {
+                     <h1>Hello,i am nekpal</h1>
+                 }
+                 else if (myvar == 3)
+                 {
+                     <h1>Hello,.net fromewrok </h1>
+                 }
+                 else
+            {
+                <h1>Hello,.net mvc</h1>
+            }
+             </div>
+             <hr />
+             <div>
+                 @(myvar == 2?"condition is true":"conditon is false")
+             </div>
+         </body>
+</html>
