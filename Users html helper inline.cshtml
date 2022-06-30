@@ -1,0 +1,50 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @helper myListHelper(string[] str)
+        {
+            <ul>
+                @foreach (var item in str)
+                {
+                    <li>@item</li>
+
+                }
+            </ul>
+        }
+    </div>
+    <div>
+        <label>example 1-Name List</label>
+    </div>
+
+    <div>
+        @myListHelper(new string[] { "nekpal", "sachin", "rihan" })
+    </div>
+    <hr />
+
+
+    <div>
+        <label>example 2-program lanaguage</label>
+    </div>
+
+    <div>
+        @myListHelper(new string[] { "C#", "Sql", ".net mvc" })
+    </div>
+          <hr />
+    <div>
+        <label>example 3-Empty list</label>
+    </div>
+    <hr />
+
+    <div>
+        @myListHelper(new string[] { })
+    </div>
+
+</body>
+</html>
