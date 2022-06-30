@@ -1,0 +1,38 @@
+﻿
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @for (int a = 1; a <= 8; a++)
+            {
+                <div>
+                    <h1>Hello nekpal,for @a index</h1><br />
+                </div>
+            }
+    </div>
+
+    <hr />
+    <div>
+        @{ 
+            var myList = new List<string>() { "nekpal","rihan","sachin" };
+            
+
+        }
+    </div>
+
+    <div>
+        @foreach (var obj in myList)
+        {
+                <h1>myvalues is=@obj</h1><br />
+            }
+    </div>
+    
+</body>
+</html>
